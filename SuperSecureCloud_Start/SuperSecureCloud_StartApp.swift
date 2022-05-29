@@ -11,7 +11,7 @@ import SwiftUI
 struct SuperSecureCloud_StartApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+			SignUpView()
         }
     }
 }

@@ -8,17 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		EEC172672843A7A1009A8690 /* SuperSecureCloud_StartApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC172662843A7A1009A8690 /* SuperSecureCloud_StartApp.swift */; };
-		EEC172692843A7A1009A8690 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC172682843A7A1009A8690 /* ContentView.swift */; };
+		EEC172692843A7A1009A8690 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC172682843A7A1009A8690 /* SignUpView.swift */; };
 		EEC1726B2843A7A2009A8690 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEC1726A2843A7A2009A8690 /* Assets.xcassets */; };
 		EEC1726E2843A7A2009A8690 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEC1726D2843A7A2009A8690 /* Preview Assets.xcassets */; };
+		EEC172772843A7EE009A8690 /* SignUpValidationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC172762843A7EE009A8690 /* SignUpValidationInfo.swift */; };
+		EEC172792843A87E009A8690 /* AppErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC172782843A87E009A8690 /* AppErrors.swift */; };
+		EEC1727C2843A8F6009A8690 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC1727B2843A8F6009A8690 /* ContentViewModel.swift */; };
+		EEC1727F2843A917009A8690 /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC1727E2843A917009A8690 /* NetworkingService.swift */; };
+		EEC172812843A960009A8690 /* SignUpValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC172802843A960009A8690 /* SignUpValidator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EEC172632843A7A1009A8690 /* SuperSecureCloud_Start.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperSecureCloud_Start.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEC172662843A7A1009A8690 /* SuperSecureCloud_StartApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperSecureCloud_StartApp.swift; sourceTree = "<group>"; };
-		EEC172682843A7A1009A8690 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EEC172682843A7A1009A8690 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		EEC1726A2843A7A2009A8690 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EEC1726D2843A7A2009A8690 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EEC172762843A7EE009A8690 /* SignUpValidationInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpValidationInfo.swift; sourceTree = "<group>"; };
+		EEC172782843A87E009A8690 /* AppErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppErrors.swift; sourceTree = "<group>"; };
+		EEC1727B2843A8F6009A8690 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		EEC1727E2843A917009A8690 /* NetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
+		EEC172802843A960009A8690 /* SignUpValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpValidator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +61,11 @@
 		EEC172652843A7A1009A8690 /* SuperSecureCloud_Start */ = {
 			isa = PBXGroup;
 			children = (
+				EEC172782843A87E009A8690 /* AppErrors.swift */,
 				EEC172662843A7A1009A8690 /* SuperSecureCloud_StartApp.swift */,
-				EEC172682843A7A1009A8690 /* ContentView.swift */,
 				EEC1726A2843A7A2009A8690 /* Assets.xcassets */,
+				EEC172822843AB23009A8690 /* Sign Up */,
+				EEC1727D2843A908009A8690 /* Services */,
 				EEC1726C2843A7A2009A8690 /* Preview Content */,
 			);
 			path = SuperSecureCloud_Start;
@@ -65,6 +77,25 @@
 				EEC1726D2843A7A2009A8690 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EEC1727D2843A908009A8690 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EEC1727E2843A917009A8690 /* NetworkingService.swift */,
+				EEC172802843A960009A8690 /* SignUpValidator.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		EEC172822843AB23009A8690 /* Sign Up */ = {
+			isa = PBXGroup;
+			children = (
+				EEC172762843A7EE009A8690 /* SignUpValidationInfo.swift */,
+				EEC172682843A7A1009A8690 /* SignUpView.swift */,
+				EEC1727B2843A8F6009A8690 /* ContentViewModel.swift */,
+			);
+			path = "Sign Up";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +168,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EEC172692843A7A1009A8690 /* ContentView.swift in Sources */,
+				EEC172792843A87E009A8690 /* AppErrors.swift in Sources */,
+				EEC172692843A7A1009A8690 /* SignUpView.swift in Sources */,
 				EEC172672843A7A1009A8690 /* SuperSecureCloud_StartApp.swift in Sources */,
+				EEC1727F2843A917009A8690 /* NetworkingService.swift in Sources */,
+				EEC172772843A7EE009A8690 /* SignUpValidationInfo.swift in Sources */,
+				EEC1727C2843A8F6009A8690 /* ContentViewModel.swift in Sources */,
+				EEC172812843A960009A8690 /* SignUpValidator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
